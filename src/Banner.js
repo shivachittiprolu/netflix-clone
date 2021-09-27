@@ -31,7 +31,7 @@ useEffect(() => {
             backgroundImage: `url(${requests.imgBaseUrl}${movie.backdrop_path})`
         }}>
             <div className="banner__content">
-                <h1 className="banner__title">{movie?.title || movie?.name || movie?.originam_name}</h1>
+                <h1 className="banner__title">{truncate(movie?.title || movie?.name || movie?.originam_name,18)}</h1>
                 
                 <div className="banner_buttons">
                     <button className="banner__button">Play</button>
