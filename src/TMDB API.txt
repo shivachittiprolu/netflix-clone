@@ -1,0 +1,4 @@
+TMDB API
+{"api_key":"6f96ea9cb4464f42bd8190bffeeab138"}
+APi Read Access Token: eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2Zjk2ZWE5Y2I0NDY0ZjQyYmQ4MTkwYmZmZWVhYjEzOCIsInN1YiI6IjYxNGI2MTZiNTk0Yzk0MDA4OGIwZjI2YSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.xol1_X4cSY0fha3yKfU95_McMRtB9rCs2o_xlA2wAps
+Example API Request: https://api.themoviedb.org/3/movie/550?api_key=6f96ea9cb4464f42bd8190bffeeab138
