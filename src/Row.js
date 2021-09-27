@@ -2,7 +2,8 @@ import React, { useState,useEffect } from 'react';
 import axiosClient from './axios';
 import './Row.css';
 
-const baseUrl ="https://api.themoviedb.org/3"
+const baseUrl ="https://api.themoviedb.org/3";
+const imgBaseUrl="https://image.tmdb.org/t/p/original/";
 function Row({ title, fetchUrl }) {
     const [movies, setMovies] = useState( [] );
 
@@ -17,14 +18,14 @@ function Row({ title, fetchUrl }) {
         }
         fetchData()
     }, [fetchUrl] )
-    console.log(movies);
+    console.log(movies);     
     
     return (
         <div className="row">
             <h2>{ title }</h2>
             <div className="row__posters">
                 {movies.map(movie=>(
-                        <img key={movie.id} className ="row__poster" src={`${baseUrl}${movie.poster_path}`} alt={movie.name} />
+                        <img key={movie.id} className ="row__poster" src={`${imgBaseUrl}${movie.poster_path}`} alt={movie.name} />
                 ))}
             </div>
 
